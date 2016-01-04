@@ -9,242 +9,303 @@
 <template name="Layout">
 	<div class="wrap">
 		<header>
-			<div class="logo">
-	    		<a href="index.html">
-	    			<img src="images/logo.png" alt="logo by mobifreaks"/>
-	    			<span class="title"><span>dot</span>.mobi</span>
-	    		</a>
-	    		<p>Just another free mobile website template by mobifreaks</p>
-	    	</div>   
-			<nav class="vertical menu">
-	            <ul>
-	                <li><a href="index.html">Home page</a></li>
-	                <li><a href="single.html">Single</a></li>
-	                <li><a href="basic_markup.html">Basic Markup</a></li>
-	                <li><a href="contact.html">Contact</a></li>
-	            </ul>
-	        </nav>
+		   <div class="header_top">
+		   		<div class="profile_details">
+		   			<div class="user-info">
+		   				<h4>Hello,<a href="#"> Username</a></h4>
+	        			<ul>
+	        				<li class="profile active"><a href="#">Profile </a></li>
+	        				<li> | </li>
+	        				<li class="logout"><a href="#"> Logout</a></li>
+	        				<div class="clear"></div>		
+	        			</ul>
+		   			</div>
+		   			<div class="profile_img">	
+	             	   <a href=""><img src="images/profile_img40x40.jpg" alt="" />	</a>
+	               </div>	
+	               <div class="clear"></div>	
+		   		</div>
+		   		<div class="clear"></div>	
+		   </div>
 		</header>
 	
 		<div class="content">
 			{{> yield}}
 		</div>
 		
-	    <footer>
-	    	<p>- Copyright 2012 domain.tld</p>
-	    	<p>- Design by <a href="http://mobifreaks.com">Mobifreaks</a></p>
-	    </footer>
+    	<div class="copy-right">
+			<p>© 2013 Flat Design UI Components. All Rights Reserved | Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a> </p>
+	 	 </div>
 	</div>
 </template>
 
 <template name="Home">
-	<article onclick="window.location = 'index.html'">
-		<section class="head">
-			<h3><a href="basic_markup.html">Of course there is some title</a></h3>
-			<div class="date">- 20 mar 2012 -</div>
-		</section>
-	</article>
-	<article onclick="window.location = 'index.html'">
-		<section class="head">
-			<h3><a href="basic_markup.html">Oh mai..!</a></h3>
-			<div class="date">- 20 mar 2012 -</div>
-		</section>
-	</article>
-	<article onclick="window.location = 'index.html'">
-		<section class="head">
-			<h3><a href="basic_markup.html">What could be the title</a></h3>
-			<div class="date">- 20 mar 2012 -</div>
-		</section>
-	</article>
-	<article onclick="window.location = 'index.html'">
-		<section class="head">
-			<h3><a href="basic_markup.html">Another title is here</a></h3>
-			<div class="date">- 20 mar 2012 -</div>
-		</section>
-	</article>
-	<article onclick="window.location = 'index.html'">
-		<section class="head">
-			<h3><a href="basic_markup.html">Awesome post guys</a></h3>
-			<div class="date">- 20 mar 2012 -</div>
-		</section>
-	</article>
-</template>
+<div class="main">  
+	    <div class="wrap">  		 
+	       <div class="column_left">	          
+	    		 <div class="menu_box">
+	    		 	 <h3>Menu Box</h3>
+	    		 	   <div class="menu_box_list">
+				      		<ul>
+				      			<li><a href="#" class="account"><span>Account</span></a></li>		
+						  		<li><a href="#" class="messages"><span>Messages</span><label class="digits">24</label><div class="clear"></div></a></li>
+						  		<li class="active"><a href="#" class="invites"><span>Invites</span><label class="digits active">3</label><div class="clear"></div></a></li>
+						  		<li><a href="#" class="events"><span>Events</span><label class="digits">5</label><div class="clear"></div></a></li>
+						  		<li><a href="#" class="account_settings"><span>Account Settings</span></a></li>
+						  		<li><a href="#" class="statistics"><span>Statistics</span></a></li>
+						  		 <li><a href="#" class="Favourites"><span>Favourites</span></a></li>	
+						  		<li><a href="#" class="Settings"><span>Settings</span></a></li>							  					    		   
+				    		</ul>
+				      </div>
+	    		 </div>
+	    		 <div class="chart">
+		               <h3>Os Audience Stats</h3>
+						     <span><img src="images/chart.png" alt="" /></span>
+						<div class="chart_list">
+			           	  <ul>
+			           	  	<li><a href="#" class="red">ios<p class="percentage">21<em>%</em></p></a></li>
+			           	  	<li><a href="#" class="purple">Mac<p class="percentage">48<em>%</em></p></a></li>
+			           	  	<li><a href="#" class="yellow">Linux<p class="percentage">9<em>%</em></p></a></li>
+			           	  	<li><a href="#" class="blue">Win<p class="percentage">32<em>%</em></p></a></li>
+			           	  	<div class="clear"></div>	
+			           	  </ul>
+			           </div>			           
+		          </div>
+		             <div class="graph">		             	
+		             	<img src="images/graph.png" alt="" />
+		             	<div class="graph_list">
+		             		 <div class="week-month-year">
+		             		 	<p><a href="#">Week</a></p>
+		             		 	<p><a href="#" class="active">Month</a></p>
+		             		 	<p><a href="#">year</a></p>
+		             		 	<div class="clear"></div>
+		             		 </div>
+				      			<ul>
+						  		    <li><a href="#"><span class="day_name">Apr</span> 2013 
+						  			<label class="digits"><span>+</span>21<em>%</em></label><div class="clear"></div></a></li>
+						  			<li class="active"><a href="#"><span class="day_name">May</span> 2013 
+						  			<label class="digits"><span>+</span>48<em>%</em></label><div class="clear"></div></a></li>
+						  			<li><a href="#"><span class="day_name">Jun</span> 2013 
+						  			<label class="digits"><span>+</span>35<em>%</em> </label><div class="clear"></div></a></li>						  			
+				    		</ul>
+				      </div>
+		             </div>
+		                 <div class="video_palyer">
+								<iframe src="//player.vimeo.com/video/24363983" width="100%" height="150px" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> 
+		                </div>        
+		     	          
+		          		<div class="social_network_likes">
+				      		<ul>
+				      			<li><a href="#" class="facebook"><i><img src="images/facebook_icon.png" alt=""></i> <span>248k</span></a></li>
+				      			<li><a href="#" class="twitter"><i><img src="images/tweets.png" alt=""></i> <span>30k</span></a></li>
+				      			<li><a href="#" class="googleplus"><i><img src="images/google+.png" alt=""></i> <span>124k</span></a></li>
+				      			<li><a href="#" class="mail"><i><img src="images/mail-hover.png" alt=""></i> <span>89k</span></a></li>
+				      			<div class="clear"></div>
+				    		</ul>
+		          		</div>
+	  		</div> 
+	  		
+            <div class="column_middle">
+              <div class="column_middle_grid1">
+		         <div class="profile_picture">
+		        	<a href=""><img src="images/profile_img150x150.jpg" alt="" />	</a>		         
+		            <div class="profile_picture_name">
+		            	<h2>Anne Hathaway</h2>
+		            	<p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+		            </div>
+		             <span><a href="#"> <img src="images/follow_user.png" alt="" /> </a></span>
+		          </div>
+		           <div class="articles_list">
+		           	  <ul>
+		           	  	<li><a href="#" class="red"> <img src="images/comments.png" alt="" /> 23</a></li>
+		           	  	<li><a href="#" class="purple"> <img src="images/views.png" alt="" /> 841</a></li>
+		           	  	<li><a href="#" class="yellow"> <img src="images/likes.png" alt="" /> 49</a></li>
+		           	  	<div class="clear"></div>	
+		           	  </ul>
+		           </div>
+		       </div>
+		         <div class="weather">
+		               <h3><i><img src="images/location.png" alt="" /> </i> Cluj-Napoca / Ro</h3>
+		              <div class="today_temp">
+		                <div class="temp">
+							<figure>Fri 29/06<span>24<em>o</em></span></figure>
+						</div>
+						<img src="images/sun.png" alt="" />
+					</div>
+						<div class="temp_list">
+				      			<ul>
+						  		    <li><a href="#"><span class="day_name">Sat</span>&nbsp; 29/06 
+						  			<label class="digits">25<em>o</em> <i><img src="images/sun_icon1.png" alt="" /></i></label><div class="clear"></div></a></li>
+						  			<li class="active"><a href="#"><span class="day_name">Sun</span>&nbsp; 30/06 
+						  			<label class="digits">22<em>o</em> <i><img src="images/clouds.png" alt="" /></i></label><div class="clear"></div></a></li>
+						  			<li><a href="#"><span class="day_name">Mon</span>&nbsp; 01/07 
+						  			<label class="digits">24<em>o</em> <i><img src="images/clouds.png" alt="" /></i></label><div class="clear"></div></a></li>
+						  			<li><a href="#"><span class="day_name">Tue</span>&nbsp; 02/07 
+						  			<label class="digits">26<em>o</em> <i><img src="images/sun_icon1.png" alt="" /></i></label><div class="clear"></div></a></li>
+						  			<li><a href="#"><span class="day_name">Wed</span>&nbsp; 03/07 
+						  			<label class="digits">27<em>o</em> <i><img src="images/sun_icon2.png" alt="" /></i></label><div class="clear"></div></a></li>
+						  			<li><a href="#"><span class="day_name">Thu</span>&nbsp; 04/07
+						  			<label class="digits">29<em>o</em> <i><img src="images/sun_icon2.png" alt="" /></i></label><div class="clear"></div></a></li>
+				    		</ul>
+				      </div>
+		          </div>	           
+		         <div class="tweets">
+		               <h3><i><img src="images/tweets.png" alt="" /> </i> Latest Tweets</h3>		              
+						<div class="tweets_list">
+				      		<ul>
+						  		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <a href="#">@Neque</a>
+						  			<span>10 minutes ago</span></li>
+						  	   <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore eiusmod <a href="#">#Creative Cloud</a>
+						  			<span>2 hours ago</span></li>
+				    		</ul>
+				      </div>
+		          </div>
+		          <div class="social_networks">
+				      		<ul>
+				      			<li><a href="#" class="facebook"><i><img src="images/facebook_icon.png" alt="" /></i> <span>Share to Facebook</span><div class="clear"></div></a></li>
+				      			<li><a href="#" class="twitter"><i><img src="images/tweets.png" alt="" /></i> <span>Share to Twitter</span><div class="clear"></div></a></li>
+				      			<li><a href="#" class="googleplus"><i><img src="images/google+.png" alt="" /></i> <span>Share to Google+</span><div class="clear"></div></a></li>
+				    		</ul>
+		          </div>	           
+		       
+    	    </div>
+    	    
+            <div class="column_right">
+            	<div class="column_right_grid">
+                 <div class="newsletter">
+				   <h3>Join the newsletter</h3>
+					    <form>
+					    	<span>
+					 	     <i><img src="images/mail.png" alt="" /></i>
+					 	     <input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+					 	    </span>			 	    
+					 		<input type="submit" class="my_button" value="Subscribe">
+					 	</form>
+				   </div>
+			   </div>
+				 <div class="column_right_grid sign-in">
+				 	<div class="sign_in">
+				       <h3>Sign in to your account</h3>
+					    <form>
+					    	<span>
+					 	    <i><img src="images/mail.png" alt="" /></i><input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+					 	    </span>
+					 	    <span>
+					 	     <i><img src="images/lock.png" alt="" /></i>
+					 	     <input type="password" placeholder="password">
+					 	    </span>
+					 		<input type="submit" class="my-button"  value="Sign In">
+					 	</form>
+					       <h4><a href="#">Forget Password?</a></h4>				   
+          		       </div>
+          		 	  <div class="signin_facebook">
+					   	 <p><a href="#">  <i> <img src="images/facebook.png" alt="" /></i>Sign in with facebook</a></p>
+				      </div>
+				   </div>
+				   <div class="column_right_grid downloading_uploading">
+                      <ul>
+					      <li>                              
+                            <div class="progress">
+                              <div class="progress-bar" style="width:81%"> </div>
+                            </div>
+                            <div class="clearfix">
+                                <p class="downloading"> <i><img src="images/download.png" alt="" /></i> Downloading...</p>
+                                <p class="percentage">81<em>%</em></p>
+                                <div class="clear"></div>
+                            </div>
+                           </li>
+                           <li>                              
+                            <div class="progress">
+                              <div class="progress-bar uploading" style="width:43%"> </div>
+                            </div>
+                            <div class="clearfix">
+                                <p class="downloading"><i><img src="images/upload.png" alt="" /></i> Uploading...</p>
+                                <p class="percentage">43<em>%</em></p>
+                                <div class="clear"></div>
+                            </div>
+                           </li>
+                        </ul>
+				   </div>
+				   <div class="column_right_grid date_events">
+				     	  <h3><a href="#" id="slide_prev"><img src="images/arrow-left.png" alt="" /></a> <em>Wednesday</em> <a href="#" id="slide_next"><img src="images/arrow-right.png" alt="" /></a></h3>
+				     	 		<ul class="event_dates">
+						            <li>26</li>						           
+						        </ul>
+						         <div class="button"><a href="#">Add Event</a></div>											 								           
+				    </div>
+				   <div class="column_right_grid calender">
+				   	<div id="calendar">
+					<div class="c-title dark-gray-3level">
+						<div class="left-button"><img src="images/arrow-left.png" alt="" /> </div>						
+						<div class="title">November 2013</div>
+						<div class="right-button"><img src="images/arrow-right.png" alt="" /></div>
+						<div class="clear"></div>
+					</div>
 
-<template name="Markup">
-	<section>
-		<h2 class="underline">Headings</h2>
-    	<h1>h1 heading level one</h1>
-    	<h2>h2 heading level two</h2>
-    	<h3>h3 heading level three</h3>
-    	<h4>h4 heading level four</h4>
-    	<h5>h5 heading level five</h5>
-    	<h6>h6 heading level six</h6>        		
-    	<h2 class="underline">Paragraphs</h2>
-    	<p>Combination of dummy text</p>
-    	<p>She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Co  mmander. There'll be no one to stop us this time! The plans you refer to will soon be back in our hands. Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense. Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense.</p>
-    	<p>Still, she's got a lot of spirit. I don't know, what do you think? Your eyes can deceive you. Don't trust them. In my experience, there is no such thing as luck. Partially, but it also obeys your commands. I find your lack of faith disturbing.</p>
-    	<p>Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money. Ye-ha! Still, she's got a lot of spirit. I don't know, what do you think?</p>        		
-    	<h2 class="underline">Text Formatting</h2>
-    	<p>Bold <b>Design Name</b></p>
-		<p>Strong <strong>Design Name</strong></p>
-		<p>Italic <i>Design Name</i></p>
-		<p>Emphasized <em>Design Name</em></p>
-		<p>Small text <small>Design Name</small></p>
-		<p>Deleted <del>Design Name</del></p>
-		<p>Inserted <ins>Design Name</ins></p>
-		<p>Superscripted <sup>Design Name</sup></p>
-		<p>Subscripted <sub>Design Name</sub></p>
-		<p>Code style <code>Design Name</code></p>
-		<p>Keyboard style <kbd>Design Name</kbd></p>
-		<p>Sample output from a computer program <samp>Design Name</samp></p>
-		<p>Variable <var>Design Name</var></p>
-		<p>Quoted <q>Design Name</q></p>
-		<p>Title of the work <cite>Design Name</cite></p>
-		<p>Defination term <dfn>Design Name</dfn></p>
-		<p>Abbrevated Text <abbr title="Abbrevation for design name">Design Name</abbr></p>  
-		<h3>Address</h3>
-		<address>Design Name<br/>by <a href="http://mobifreaks.com">Mobifreaks</a><br/>support[-at-]mobifreaks.com</address>			        		
-    	<h2 class="underline">Pre</h2>   	
-    	<pre>This is just	a pre  	formatted   text</pre>
-    	<h2 class="underline">Blockquote</h2> 
-    	<blockquote><p>Blockquoted text.Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money. Ye-ha! Still, she's got a lot of spirit. I don't know, what do you think?</p></blockquote>        	        		
-    	<h2 class="underline">HTML IMages</h2>
-    	<img src="http://lorempixel.com/400/280" alt=""/>
-    	<h2 class="underline">Unordered list</h2>
-    	<ul>
-		   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-		   <li>Aliquam tincidunt mauris eu risus.</li>
-		   <li>Vestibulum auctor dapibus neque.</li>
-		</ul>
-    	<h2 class="underline">Ordered list</h2>
-    	<ol>
-		   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-		   <li>Aliquam tincidunt mauris eu risus.</li>
-		   <li>Vestibulum auctor dapibus neque.</li>
-		</ol>
-    	<h2 class="underline">Defination list</h2>
-		<dl>
-		   <dt>Definition list</dt>
-		   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-		aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-		commodo consequat.</dd>
-		   <dt>Lorem ipsum dolor sit amet</dt>
-		   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-		aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-		commodo consequat.</dd>
-		</dl>
-       <h2 class="underline">Basic Navigation</h2>
-       <h3>Vertical Navigation</h3>
-       <nav class="vertical">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Clients</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
-       <h3>Horizontal Navigation</h3>
-       <nav class="horizontal">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Clients</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
-		<h2 class="underline">Forms</h2>
-		<form action="#" method="post" class="label-top">
-		    <div>
-		    	<h4>Text Field</h4>
-		         <label for="name">Text Input:</label>
-		         <input type="text" name="name" id="name" value="" tabindex="1" />
-		    </div>
-		    <div>
-	    		<h4>Password Field</h4>
-		         <label for="password">Password Input:</label>
-		         <input type="password" name="password" id="password" value="" tabindex="1" />
-		    </div>
-		
-		    <div>
-		         <h4>Radio Button Choice</h4>
-		
-		         <label for="radio-choice-1" class="inline">Choice 1</label>
-		         <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
-		
-				 <label for="radio-choice-2" class="inline">Choice 2</label>
-		         <input type="radio" name="radio-choice-1" id="radio-choice-2" tabindex="3" value="choice-1" />
-		    </div>
-		
-			<div>
-				<h4>Dropdown Choice</h4>
-				<label for="select-choice" class="inline">Select Dropdown Choice:</label>
-				<select name="select-choice" id="select-choice">
-					<option value="Choice 1">Choice 1</option>
-					<option value="Choice 2">Choice 2</option>
-					<option value="Choice 3">Choice 3</option>
-				</select>
-			</div>
-			
-			<div>
-				<label for="textarea">Textarea:</label>
-				<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-			</div>
-			
-			<div>
-				<input type="checkbox" name="checkbox" id="checkbox" />
-				<label for="checkbox" class="inline">Checkbox:</label>
-		    </div>
-		
-			<div>
-			    <input type="submit" value="Submit" />
-		    </div>
-		</form>
-	</section>
-</template>
-
-<template name="Single">
-	<h1>The Mutants Are Revolting</h1>
-				<p>So, how 'bout them Knicks? Oh, how awful. Did he at least die painlessly? &hellip;To shreds, you say. Well, how is his wife holding up? &hellip;To shreds, you say. Why am I sticky and naked? Did I miss something fun?</p>
-				<h2>Hell Is Other Robots</h2>
-				<p>Yeah. Give a little credit to our public schools. But I know you in the future. I cleaned your poop. We're also Santa Claus! The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep. Come, Comrade Bender! We must take to the streets!</p>
-				<ul>
-				<li>What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.</li>
-				<li>Fry! Stay back! He's too powerful!</li>
-				</ul>
-				<h3>Rebirth</h3>
-				<p>OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. But, like most politicians, he promised more than he could deliver. You are the last hope of the universe. Hey, you add a one and two zeros to that or we walk! Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase.</p>
-				<h4>The Problem With Popplers</h4>
-				<p>I barely knew Philip, but as a clergyman I have no problem telling his most intimate friends all about him. Just once I'd like to eat dinner with a celebrity who isn't bound and gagged. Kids don't turn rotten just from watching TV.</p>
-				<ol>
-				<li>Just once I'd like to eat dinner with a celebrity who isn't bound and gagged.</li>
-				<li>But I've never been to the moon!</li>
-				<li>But I've never been to the moon!</li>
-				<li>Why am I sticky and naked? Did I miss something fun?</li>
-				</ol>
-				<h5>The Sting</h5>
-				<p>I've been there. My folks were always on me to groom myself and wear underpants. What am I, the pope? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'? Ow, my spirit! It's toe-tappingly tragic!</p>
-</template>
-
-<template name="Contact">
-	<form action="#" method="post" class="label-top">
-			    <div>
-			         <label for="name">Name <span class="red">*</span></label>
-			         <input type="text" name="name" id="name" value="" tabindex="1" />
-			    </div>
-			    <div>
-			         <label for="email">Email ID <span class="red">*</span></label>
-			         <input type="text" name="email" id="email" value="" tabindex="1" />
-			    </div>
-			    <div>
-			         <label for="subject">Subject <span class="red">*</span></label>
-			         <input type="text" name="subject" id="subject" value="" tabindex="1" />
-			    </div>
-			    <div>
-					<label for="Body">Body <span class="red">*</span></label>
-					<textarea cols="40" rows="8" name="Body" id="Body"></textarea>
+					<table class="c-days">
+					   <thead class="light-gray">
+						  <tr>
+							<th>S</th>
+							<th>M</th>
+							<th>T</th>
+							<th>W</th>
+							<th>T</th>
+							<th>F</th>
+							<th>S</th>
+						  </tr>
+					   </thead>
+					   <tbody>
+					   		<tr class="simple-lightgray">
+					   			<td class="other-month"><span>27</span></td>
+					   			<td class="other-month"><span>28</span></td>
+					   			<td class="other-month"><span>29</span></td>
+					   			<td class="other-month"><span>30</span></td>
+					   			<td class="other-month"><span>31</span></td>
+					   			<td><span>1</span></td>
+					   			<td><span>2</span></td>					   			
+					   		</tr>
+					   		<tr class="simple-lightgray">
+					   			<td><span>3</span></td>
+					   			<td><span>4</span></td>
+					   			<td><span>5</span></td>
+					   			<td><span>6</span></td>
+					   			<td><span>7</span></td>
+					   			<td><span>8</span></td>
+					   			<td><span>9</span></td>					   			
+					   		</tr>
+					   		<tr class="simple-lightgray">
+					   			<td><span>10</span></td>
+					   			<td><span>11</span></td>
+					   			<td><span>12</span></td>
+					   			<td><span>13</span></td>
+					   			<td><span>14</span></td>
+					   			<td><span>15</span></td>
+					   			<td><span>16</span></td>					   			
+					   		</tr>
+					   		<tr class="simple-lightgray">
+					   			<td><span>17</span></td>
+					   			<td><span>18</span></td>
+					   			<td><span>19</span></td>
+					   			<td><span>20</span></td>
+					   			<td><span>21</span></td>
+					   			<td><span>22</span></td>
+					   			<td class="today"><span>23</span></td>				   			
+					   		</tr>
+					   		<tr class="simple-lightgray">
+					   			<td><span>24</span></td>
+					   			<td><span>25</span></td>
+					   			<td><span>26</span></td>
+					   			<td><span>27</span></td>
+					   			<td><span>28</span></td>
+					   			<td><span>29</span></td>
+					   			<td><span>30</span></td>
+					   		</tr>
+					   </tbody>
+					</table>
 				</div>
-				<div>
-				    <input type="submit" value="Submit" />
-			    </div>
-			</form>
+				   </div>
+             </div>
+    	<div class="clear"></div>
+ 	 </div>
+   </div>   
 </template>
